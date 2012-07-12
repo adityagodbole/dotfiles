@@ -1,4 +1,3 @@
 dotfiles
 ========
-
-config files
+Various config files which I use
