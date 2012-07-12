@@ -10,7 +10,7 @@ function get_git_dirty
 end
 function get_git_prompt
 	git branch > /dev/null ^&1; or return 1
-	echo \ (get_git_branch)(get_git_dirty)\)
+	printf " %s%s)" (get_git_branch) (get_git_dirty)
 end
 
 set -x NODE_PATH /usr/local/lib/node_modules
